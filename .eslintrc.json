@@ -1,6 +1,12 @@
 {
-    "extends": ["eslint:recommended", "prettier", "prettier/react"],
-    "plugins": [],
+    "plugins": ["react", "import", "jsx-a11y"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:jsx-a11y/recommended",
+        "prettier"
+    ],
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module",
@@ -8,9 +14,19 @@
             "jsx": true
         }
     },
+    "rules": {
+        "react/prop-types": 0,
+        "no-console": 1
+    },
+    
     "env": {
         "es6": true,
         "browser": true,
         "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
