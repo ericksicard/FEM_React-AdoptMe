@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier \"src/**/*.{js,html}\" --write",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",  
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "dev": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +21,18 @@
   },
   "homepage": "https://github.com/ericksicard/FEM_React-AdoptMe#readme",
   "devDependencies": {
+    "@parcel/optimizer-cssnano": "^2.0.0-nightly.607",
+    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.607",
+    "@parcel/packager-css": "^2.0.0-nightly.607",
+    "@parcel/packager-html": "^2.0.0-nightly.607",
+    "@parcel/transformer-css": "^2.0.0-nightly.607",
+    "@parcel/transformer-html": "^2.0.0-nightly.607",
+    "@parcel/transformer-postcss": "^2.0.0-nightly.607",
+    "@parcel/transformer-posthtml": "^2.0.0-nightly.607",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^8.0.0",
+    "parcel": "^2.0.0-beta.1",
+    "postcss": "^8.2.6",
     "prettier": "^2.2.1"
   }
 }
