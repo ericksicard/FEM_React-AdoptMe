@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const SearchParams = () => {
-    const [location, setLocation] = useState("Seatle, WA")
+    const [location, setLocation] = useState("Seatle, WA");
 
     return (
         <div className="search-params">
