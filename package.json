@@ -7,6 +7,7 @@
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "@parcel/transformer-postcss": "^2.0.0-nightly.607",
     "@parcel/transformer-posthtml": "^2.0.0-nightly.607",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-import": "^2.22.1",
@@ -44,5 +46,8 @@
     "@frontendmasters/pet": "^1.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
 }
