@@ -14,17 +14,13 @@ const App = () => {
   return (
     <React.StrictMode>
       <Router>
-        <div>
           <header>
             <Link to="/">Adopt Me!</Link>
           </header>
+        <div>
             <Switch>
-              <Route path="/details/:id">
-                <Details />
-              </Route>
-              <Route path="/">
-                <SearchParams />
-              </Route>
+              <Route path="/details/:id" component={Details} />
+              <Route path="/"><SearchParams /></Route>
             </Switch>
         </div>
       </Router>
